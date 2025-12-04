@@ -1,14 +1,15 @@
-Fonte dos dados:
+Links para todos os dados utilizados:
 
-nota_fiscal_candidato_2022_PR -> https://dadosabertos.tse.jus.br/dataset/candidatos-2022
+- Dados brutos: https://drive.google.com/file/d/1NiE1p0FZ5ZqQVClhLC2AdIgLMWIVcnLN/view?usp=sharing
+- Dados processados: https://drive.google.com/file/d/1DR1tb65hGK-jZdF6UaFGr-i5lXmsCtF9/view?usp=sharing
 
-perfil_eleitor_secao_2022_PR -> https://dadosabertos.tse.jus.br/dataset/eleitorado-2022
+Fontes dos dados:
 
-rede_social_candidato_2022_PR -> https://dadosabertos.tse.jus.br/dataset/candidatos-2022
-
-votacao_secao_2022_PR -> https://dadosabertos.tse.jus.br/dataset/resultados-2022
-
-bq-results-20251015-170110-1760547700235 -> RAIS 2022 - Obtido via query no Base dos Dados dos dados da RAIS
+- nota_fiscal_candidato_2022_PR -> https://dadosabertos.tse.jus.br/dataset/candidatos-2022
+- perfil_eleitor_secao_2022_PR -> https://dadosabertos.tse.jus.br/dataset/eleitorado-2022
+- rede_social_candidato_2022_PR -> https://dadosabertos.tse.jus.br/dataset/candidatos-2022
+- votacao_secao_2022_PR -> https://dadosabertos.tse.jus.br/dataset/resultados-2022
+- bq-results-20251015-170110-1760547700235 -> RAIS 2022 - Obtido via query no Base dos Dados dos dados da RAIS
 -> https://basedosdados.org/dataset/3e7c4d58-96ba-448e-b053-d385a829ef00?table=86b69f96-0bfe-45da-833b-6edc9a0af213
 
 query:
@@ -21,6 +22,4 @@ SELECT id_uf, id_municipio, id_setor_censitario, area, geometria, pessoas, domic
 FROM `basedosdados.br_ibge_censo_2022.setor_censitario` 
 WHERE id_uf = '41'
 
-
-shapefiles municipios, região imediata, região intermediária e uf - Malhas IBGE
-https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html
+- shapefiles municipios, região imediata, região intermediária e uf - Malhas IBGE -> https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html
